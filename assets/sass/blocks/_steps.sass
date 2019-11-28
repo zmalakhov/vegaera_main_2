@@ -1,0 +1,56 @@
+.steps
+  background-color: #f1f1f1
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .step
+      text-align: center
+      //width: 15%
+      &__title
+        font-size: 18px
+      &__text
+        max-width: 160px
+        margin: auto
+        margin-bottom: 30px
+      img
+        width: 40%
+
+@media (max-width: 991px)
+  .steps
+    &-block
+      .step
+        padding: 10px
+        flex-basis: 33%
+        &__text
+          max-width: 100%
+
+@media (max-width: 580px)
+  .steps
+    &-block
+      .step
+        padding: 10px
+        flex-basis: 50%
+        &__text
+          max-width: 100%
+
+@media (max-width: 400px)
+  .steps
+    &-block
+      .step
+        padding: 10px
+        flex-basis: 100%
+        &__text
+          max-width: 100%
+
+
+
+
+
+
+
+
+
+
+
+

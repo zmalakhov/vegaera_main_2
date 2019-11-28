@@ -1,0 +1,95 @@
+.catalog
+  padding-top: 60px
+  padding-bottom: 0
+  background-color: #e7eaf1
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &-card-1
+    background: #89a9eb url("../img/catalog/1.jpg") no-repeat center center
+    background-size: cover
+
+  &-card-2
+    background: #89a9eb url("../img/catalog/2.jpg") no-repeat center center
+    background-size: cover
+
+  &-card-3
+    background: #89a9eb url("../img/catalog/3.jpg") no-repeat center center
+    background-size: cover
+
+  &-card-4
+    background: #89a9eb url("../img/catalog/4.jpg") no-repeat center center
+    background-size: cover
+
+  &-card-5
+    background: #89a9eb url("../img/catalog/5.jpg") no-repeat center center
+    background-size: cover
+
+  &-card-6
+    background: #89a9eb url("../img/catalog/6.jpg") no-repeat center center
+    background-size: cover
+
+  &-card-7
+    background: #89a9eb url("../img/catalog/7.jpg") no-repeat center center
+    background-size: cover
+
+  &-card-8
+    background: #89a9eb url("../img/catalog/8.jpg") no-repeat center center
+    background-size: cover
+
+  &-card
+    flex-basis: 46%
+    padding-top: 15px
+    padding-left: 10px
+    margin: 15px
+    box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2)
+    overflow-y: hidden
+    &:hover
+      .catalog-card__buttons
+        transform: translateY(0)
+        opacity: 1
+    &__tag
+      background-color: rgba(80, 127, 225, 0.6)
+      color: #ffffff
+      padding: 5px 10px
+
+    &__buttons
+      margin-top: 50px
+      display: flex
+      justify-content: flex-end
+      opacity: 0
+      transition: 0.2s
+      transform: translateY(100%)
+      .fitting-button, .add-button
+        border: none
+        padding: 13px
+        font-size: 13px
+
+  &-more
+    padding: 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__button-lg
+      display: inline-block
+      //width: 40%
+      padding: 20px 20px
+      font-size: 20px
+      text-align: center
+      text-transform: uppercase
+      text-decoration: none
+      +bold
+      color: #ffffff
+      background-color: $primary
+
+
+
+@media (max-width: 768px)
+  .catalog
+    h2
+      margin-bottom: 40px
+
+    &-card
+      flex-basis: 100%
